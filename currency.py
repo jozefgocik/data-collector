@@ -19,7 +19,7 @@ with open("currency.csv", "a", newline="", encoding="utf-8") as f:
 
     # Header if file is new
     # Uncomment if writing new file
-    # writer.writerow(["date", "time", "base", "target", "rate"])
+    writer.writerow(["date", "time", "base", "target", "rate"])
 
     for target, rate in rates.items():
         writer.writerow([today, time, data["base"], target, rate])
