@@ -2,7 +2,6 @@ name: News Collector
 
 on:
   schedule:
-    # 08:00 UTC
     - cron: "0 8 * * *"
   workflow_dispatch:
 
